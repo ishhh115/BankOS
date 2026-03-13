@@ -1,3 +1,5 @@
+// Race condition demo — shows corrupted vs correct balance
+
 #include <stdio.h>
 #include <pthread.h>
 
