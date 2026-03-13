@@ -1,0 +1,13 @@
+# compiled output
+*.exe
+bankos
+demo
+
+# object files
+*.o
+
+# VS Code
+.vscode/
+
+# OS files
+Thumbs.db
