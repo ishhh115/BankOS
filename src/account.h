@@ -2,6 +2,7 @@
 #define ACCOUNT_H
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <pthread.h>
 #include <semaphore.h>
 #include <time.h>
@@ -48,8 +49,8 @@ typedef struct {
     pthread_cond_t not_full;
     sem_t slots;
 } TransactionQueue;
-Account accounts[MAX_ACCOUNTS];
-TransactionQueue tx_queue;
+extern Account accounts[MAX_ACCOUNTS];
+extern TransactionQueue tx_queue;
 #endif
 
 
