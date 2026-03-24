@@ -1,6 +1,7 @@
 #include "account.h"
 
-
+void init_semaphore();
+void test_semaphore();
 void init_bank();
 void test_rwlock();
 void print_accounts();
@@ -8,9 +9,11 @@ int deposit(int account_id, double amount);
 int withdraw(int account_id, double amount);
 double get_balance(int account_id);
 
+
 int main() {
     init_bank();
     test_rwlock();
+    test_semaphore();
     
     printf("=== INITIAL BALANCES ===\n");
     print_accounts();
