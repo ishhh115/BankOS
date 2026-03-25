@@ -1,5 +1,7 @@
 #include "account.h"
 
+void init_queue();
+void test_producer_consumer();
 void init_semaphore();
 void test_semaphore();
 void init_bank();
@@ -14,6 +16,7 @@ int main() {
     init_bank();
     test_rwlock();
     test_semaphore();
+    test_producer_consumer();
     
     printf("=== INITIAL BALANCES ===\n");
     print_accounts();
