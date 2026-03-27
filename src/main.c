@@ -1,5 +1,7 @@
 #include "account.h"
 
+
+void test_bankers();
 int transfer(int from_id, int to_id, double amount);
 void test_deadlock();
 void init_queue();
@@ -20,6 +22,7 @@ int main() {
     test_semaphore();
     test_producer_consumer();
     test_deadlock();
+    test_bankers();
     
     printf("=== INITIAL BALANCES ===\n");
     print_accounts();
